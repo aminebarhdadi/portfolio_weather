@@ -1,8 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather App
+
+A modern weather application built with Next.js that provides current weather conditions and forecasts.
+
+## Features
+
+- 🌡️ Real-time weather data
+- 🗺️ City-based weather lookup
+- 📱 Responsive design
+- 🌅 Daily weather forecasts
+- 💨 Wind speed information
+- 🎨 Clean and modern UI with Tailwind CSS
+
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [DaisyUI](https://daisyui.com/) - UI components
+- [Meteosource API](https://www.meteosource.com/) - Weather data
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- Meteosource API key
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
 npm run dev
