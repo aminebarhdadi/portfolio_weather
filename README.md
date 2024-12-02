@@ -28,7 +28,7 @@ My personal portfolio showcasing my work and skills.
 
 - [Next.js 14](https://nextjs.org/) - React framework
 - [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [DaisyUI](https://daisyui.com/) - UI components
+- [FlyonUI](https://flyonui.com/) - UI components library
 - [Meteosource API](https://www.meteosource.com/) - Weather data
 
 ## Getting Started
@@ -51,8 +51,7 @@ git clone https://github.com/yourusername/portfolio.git
 
 ```bash
 npm install
-# or
-yarn install
+npm i -D flyonui@latest  # Install FlyonUI
 ```
 
 3. Create a `.env.local` file in the root directory and add your API key:
@@ -65,8 +64,6 @@ METEOSOURCE_API_KEY=your_api_key_here
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -81,4 +78,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---

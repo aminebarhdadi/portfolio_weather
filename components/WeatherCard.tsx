@@ -48,8 +48,8 @@ export default async function WeatherCard({
   }
 
   return (
-    <div className="flex flex-col container sm:max-w-3xl w-full mx-auto items-center p-4">
-      <h1 className="text-3xl font-bold mb-6">Weather App</h1>
+    <div className="flex flex-col container sm:max-w-3xl w-full mx-auto items-center p-4 mt-13">
+      <h1 className="text-3xl md:text-5xl font-bold mb-6">Weather App</h1>
       
       <form className="flex gap-4 w-full" action="" method="get">
         <input
@@ -98,11 +98,11 @@ export default async function WeatherCard({
           {/* Weekly Forecast */}
           {weather.daily && (
             <>
-              <h3 className="text-xl mb-4">Daily Forecast</h3>
+              <h3 className="text-xl mb-4">Tägliche Vorhersage</h3>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
                 {weather.daily.data.slice(1).map((day: any, index: number) => (
-                  <div key={index} className="p-4 bg-base-200/50 shadow-md rounded-lg">
-                    <h4 className="text-lg mb-2">
+                  <div key={index} className="p-2 bg-base-200/50 shadow-md rounded-lg">
+                    <h4 className="text-lg mb-2 font-bold">
                       {index === 0 ? 'Morgen' : new Date(day.day).toLocaleDateString('de-DE', { 
                         month: 'short',
                         day: 'numeric'
@@ -116,7 +116,7 @@ export default async function WeatherCard({
                       priority
                     />
                     <div>
-                      <p>{day.all_day.temperature_max}°C / {day.all_day.temperature_min}°C</p>
+                      <p className="text-sm font-semibold">{day.all_day.temperature_max}°C / {day.all_day.temperature_min}°C</p>
                     </div>
                   </div>
                 ))}
