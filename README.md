@@ -1,80 +1,65 @@
-# Portfolio & Weather App
+# Portfolio & Weather
 
-A personal portfolio website built with Next.js that showcases my projects, including a feature-rich weather application.
+Welcome to the Portfolio & Weather project! This application serves as a personal portfolio website built with Next.js, showcasing my projects alongside a dynamic weather application.
 
-## Projects
+## Projects Overview
 
-### 1. Weather App
-A modern weather application that provides real-time weather conditions and forecasts.
+### Weather Application
+A weather application that delivers real-time weather updates and forecasts.
 
-#### Features
-- 🌡️ Real-time weather data
-- 🗺️ City-based weather lookup
-- 📱 Responsive design
+#### Key Features
+- 🌡️ Instant weather data
+- 🗺️ Search for weather by city
+- 📱 Fully responsive design
 - 🌅 Daily weather forecasts
-- 💨 Wind speed information
+- 💨 Wind speed and direction information
 
-### 2. Portfolio
-My personal portfolio showcasing my work and skills.
+### Personal Portfolio
+A comprehensive showcase of my work, skills, and professional journey.
 
-#### Features
-- 💼 Project showcase
-- 📝 About me section
-- 🔗 Social links
-- 📱 Responsive design
-- 🎨 Modern UI
+#### Key Features
+- 💼 Display of projects
+- 📝 Personal biography section
+- 📱 Mobile-friendly design
+- 🎨 Sleek and modern user interface
 
-## Tech Stack
+## Technology Stack
 
-- [Next.js 14](https://nextjs.org/) - React framework
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [FlyonUI](https://flyonui.com/) - UI components library
-- [Meteosource API](https://www.meteosource.com/) - Weather data
+- [Next.js](https://nextjs.org/) - A powerful React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework for styling
+- [FlyonUI](https://flyonui.com/) - A library of UI components
+- [Open Meteo](https://open-meteo.com/) - Source for weather data
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ 
-- npm or yarn
-- Meteosource API key
+- Node.js version 18 or higher
+- npm or yarn package manager
 
-### Installation
+### Installation Steps
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/portfolio.git
-```
+   ```bash
+   git clone https://github.com/yourusername/portfolio-weather.git
+   ```
 
 2. Install dependencies:
+   ```bash
+   npm install
+   npm i -D flyonui@latest  # Install FlyonUI
+   ```
 
-```bash
-npm install
-npm i -D flyonui@latest  # Install FlyonUI
-```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-3. Create a `.env.local` file in the root directory and add your API key:
-
-```bash
-METEOSOURCE_API_KEY=your_api_key_here
-```
-
-4. Run the development server:
-
-```bash
-npm run dev
-```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Environment Variables
-
-- `METEOSOURCE_API_KEY` - Your Meteosource API key (required for weather app)
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+--
 
 ## License
 

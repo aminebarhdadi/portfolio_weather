@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Head from "next/head";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import FlyonuiScript from '../components/FlyonuiScript';
 import React from "react";
 
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        
+        <Footer />
       </body>
       <FlyonuiScript />
     </html>

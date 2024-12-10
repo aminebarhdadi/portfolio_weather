@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
+const { addDynamicIconSelectors } = require("@iconify/tailwind")
+
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    './node_modules/flyonui/dist/js/*.js'
+    './node_modules/flyonui/dist/js/*.js',
+    "./src/*.html"
   ],
   theme: {
     extend: {
@@ -19,9 +24,17 @@ module.exports = {
   },
   plugins: [
     require('flyonui'),
-    require('flyonui/plugin')
+    require('flyonui/plugin'),
+    addDynamicIconSelectors()
   ],
   flyonui: {
-    themes: ["light", "dark", "gourmet"]
+    themes: [{
+      light: {
+        ...require("flyonui/src/theming/themes")["light"],
+        primary: "#b40000",
+        secondary: "#2F4154",
+      },
+      
+    }]
   }
 };

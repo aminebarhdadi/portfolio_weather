@@ -1,19 +1,15 @@
-//import Image from "next/image";
-import Head from "next/head";
 import WeatherCard from "../../components/WeatherCard";
 
-export default async function Home({
+export default async function WeatherPage({
   searchParams,
 }: {
   searchParams: { city?: string };
 }) {
-  const params = await Promise.resolve(searchParams);
-
+  const city = searchParams?.city || 'Berlin'; // Default to Berlin if no city is provided
+  
   return (
-    <>
-      <main>
-        <WeatherCard searchParams={params} />
-      </main>
-    </>
+    <main className="container mx-auto">
+      <WeatherCard searchParams={{ city }} />
+    </main>
   );
 }
