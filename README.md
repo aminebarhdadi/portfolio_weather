@@ -21,7 +21,7 @@ A comprehensive showcase of my work, skills, and professional journey.
 - 💼 Display of projects
 - 📝 Personal biography section
 - 📱 Mobile-friendly design
-- 🎨 Sleek and modern user interface
+- 🎨 modern user interface
 
 ## Technology Stack
 
