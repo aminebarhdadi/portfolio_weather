@@ -5,7 +5,13 @@ import '@testing-library/jest-dom';
 describe("Home", () => {
   it("renders the heading", () => {
     render(<Home />);
-    const heading = screen.getByRole("heading", { name: /Willkommen zu meinem Webentwicklungsportfolio!/i });
+    const heading = screen.getByRole("heading", { name: "Willkommen zu meinem Webentwicklungs­portfolio!" });
     expect(heading).toBeInTheDocument();
+  });
+
+  it("renders the CTA component by Test-ID", () => {
+    render(<Home />);
+    const headerElement = screen.getByTestId("cta"); // Assuming the Header component uses a <header> tag
+    expect(headerElement).toBeInTheDocument();
   });
 });

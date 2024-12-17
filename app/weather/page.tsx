@@ -5,7 +5,7 @@ export default async function WeatherPage({
 }: {
   searchParams: { city?: string };
 }) {
-  const city = searchParams?.city || 'Berlin'; // Default to Berlin if no city is provided
+  const city = searchParams?.city || 'Berlin'; 
   
   return (
     <main className="container mx-auto">

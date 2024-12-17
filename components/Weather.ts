@@ -1,5 +1,5 @@
 import { fetchWeatherApi } from 'openmeteo';
-
+import React from 'react';
 export async function geocodeCity(city: string) {
   const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(city)}`);
   const data = await response.json();

@@ -1,4 +1,8 @@
 import Image from "next/image";
+import Card from "../components/Card";
+import IconCard from "../components/IconCard";
+import CallToAction from "../components/CallToAction";
+import React from 'react';
 
 const skills = [
   { name: 'React', icon: 'icon-[akar-icons--react-fill] text-blue-400' },
@@ -16,6 +20,8 @@ const projects = [
     id: 1,
     title: 'ARKU',
     image: '/img/arku.png',
+    desc: 'Unternehmen für Maschinenbau'
+
   },
   {
     id: 2,
@@ -26,6 +32,7 @@ const projects = [
     id: 3,
     title: 'Die Krone',
     image: '/img/krone.png',
+    desc: '3 Stars Restaurant'
   },
   {
     id: 4,
@@ -88,14 +95,11 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-6">
             {skills.map((skill, index) => (
-            
-                <div key={index} className="card ">
-                  <div className="card-body  p-3 md:p-4">
-                    <div className={`mb-4 ${skill.icon} size-15`}></div>
-                    <h5 className="card-title mb-2.5 text-sm md:text-base">{skill.name}</h5>
-                  </div>
-                </div>
-              
+              <IconCard 
+                key={index}
+                icon={skill.icon} 
+                name={skill.name}
+                />
             ))}
           </div>
         </div>
@@ -109,31 +113,24 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="card hover:scale-105 transition  duration-150 ease-out">
-              <figure className=" aspect-[5/3]">
-                <img className="w-full h-full object-cover" src={project.image} alt={project.title} width={800} height={800}/>
-              </figure>
-              <div className="card-body">
-                <h5 className="card-title mb-2.5">{project.title}</h5>
-              </div>
-            </div>
+            <Card 
+              key={index}
+              image={project.image} 
+              title={project.title}
+              desc={project.desc}
+              />
           ))}
         </div>
       </div>
     </section>
-    <section id="contact" className="w-full py-20 mb-[5rem] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-slate-900	 rounded-lg" style={{ backgroundImage: "url('/img/bg-contact.jpg')" }}>
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-white mb-4">Nehmen Sie Kontakt auf</h2>
-        <p className="text-lg text-white mb-8 max-w-lg mx-auto">
-          Ich würde mich freuen, von Ihnen zu hören! Egal, ob Sie eine Frage haben oder einfach nur Hallo sagen möchten, zögern Sie nicht, sich zu melden.
-        </p>
-        <a
-          href="mailto:barhdadi.aminee@gmail.com"
-          className="btn hover:text-white hover:border-white text-slate-900 bg-white hover:bg-transparent transition duration-75"
-        >
-          Eine E-Mail senden
-        </a>
-      </div>
+    <section data-testid="cta"  id="contact" className="w-full py-20 mb-[5rem] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-slate-900	 rounded-lg" style={{ backgroundImage: "url('/img/bg-contact.jpg')" }}>
+      
+      <CallToAction 
+              title='Nehmen Sie Kontakt auf'
+              desc='Ich würde mich freuen, von Ihnen zu hören! Egal, ob Sie eine Frage haben oder einfach nur Hallo sagen möchten, zögern Sie nicht, sich zu melden.'
+              link='mailto:amine.barhdadi@kks.kbs.schule'
+              button='E-mail Senden'
+              />
     </section>
       </main>
     </div>
