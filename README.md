@@ -15,7 +15,7 @@ A weather application that delivers real-time weather updates and forecasts.
 - 💨 Wind speed and direction information
 
 ### Personal Portfolio
-A comprehensive showcase of my work, skills, and professional journey.
+A comprehensive showcase of work, skills, and get in touch section.
 
 #### Key Features
 - 💼 Display of projects
