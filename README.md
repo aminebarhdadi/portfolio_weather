@@ -23,6 +23,29 @@ A comprehensive showcase of my work, skills, and professional journey.
 - 📱 Mobile-friendly design
 - 🎨 modern user interface
 
+## Storybook
+
+Storybook is an essential part of this project, providing a powerful environment for developing and testing UI components in isolation. It allows for:
+
+- **Component Development**: Build and visualize components independently, ensuring they work as expected.
+- **Documentation**: Automatically generate documentation for components, making it easier for other developers to understand and use them.
+- **Testing**: Test components in various states and scenarios, improving reliability and reducing bugs.
+
+### Getting Started with Storybook
+
+1. **Install Storybook**:
+   ```bash
+   npx sb init
+   ```
+
+2. **Run Storybook**:
+   ```bash
+   npm run storybook
+   ```
+
+3. **Access Storybook**:
+   Open [http://localhost:6006](http://localhost:6006) in your browser to view the Storybook interface.
+
 ## Technology Stack
 
 - [Next.js](https://nextjs.org/) - A powerful React framework

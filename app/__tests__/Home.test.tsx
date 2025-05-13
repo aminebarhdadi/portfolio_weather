@@ -11,7 +11,7 @@ describe("Home", () => {
 
   it("renders the CTA component by Test-ID", () => {
     render(<Home />);
-    const headerElement = screen.getByTestId("cta"); // Assuming the Header component uses a <header> tag
+    const headerElement = screen.getByTestId("cta"); 
     expect(headerElement).toBeInTheDocument();
   });
 });

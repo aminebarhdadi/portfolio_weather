@@ -44,3 +44,5 @@ next-env.d.ts
 /prisma/dev.db-journal
 node_modules
 .env
+
+*storybook.log

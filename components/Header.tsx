@@ -6,7 +6,7 @@ const Header = () => {
       <header className="sticky container mx-auto top-2 sm:top-4 z-50  my-2 ">
         
         <nav className="navbar  rounded-box flex gap-2 shadow max-md:flex-col md:items-center">
-        <div className="flex  items-center justify-between">
+        <div className="flex max-md:w-full items-center justify-between">
           <div className="navbar-start items-center justify-between max-md:w-full">
             <a href="#" aria-label="Homepage Link">
               <Image 
